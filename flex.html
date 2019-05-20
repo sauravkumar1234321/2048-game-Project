@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title> 2048 puzzle</title>
+  <center><h1><font color="brown">2048 PuZzLe Game</h1></font></h1></center>
+ </head>
+ <body onload = "setInterval(showTime,1000)"  bgcolor="#faf8ef">
+		<font color="Red"><h2>Clock :</font> <div style="display:inline;" id="Timer"></div><div style="display:inline; float:right" id="nexttiles"></div><font color="Red"><div style = "float:right">Next 3 Tiles :  </div></font> </h2>
+		
+	<center>
+			<font color="Red"><h2>Best Score :</font> <div style="display:inline;" id="highscore"></div>( made by <div style="display:inline;" id="bestScorerName"></div> )</h2>
+		</center>		
+	<center>
+		<button type="button"><a style="cursor: pointer; padding-left: 5%; " onclick="window.location.reload();">NEW_GAME</a></button>
+		<button type="button"><a style="cursor: pointer; padding-left: 5%; " onclick="undo()">UNDO</a></button>
+	<div id="canvas"></div>	
+	<font color="Red"><h2>Score :</font> <div style="display:inline;" id="Score.value"> </div> </h2>
+	<b>HOW TO PLAY:<font color = "green"> Use your arrow keys to move the tiles. When two tiles with the same number touch, they merge into one! 
+	</font></center></b>
+	
+	<script src="function.js"></script>
+	<script src="tile.js"></script>
+	<script src="clock.js"></script>
+	<script src="score.js"></script>
+	<script src="grid.js"></script>
+	<script src="gameManager.js"></script>
+	<script src="main.js"></script>
+	
+  </script>
+ </body>
+</html>
